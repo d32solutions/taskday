@@ -1,0 +1,28 @@
+:root{--bg:#f6f5f2;--card:#fff;--text:#1c1c1e;--muted:#6b6b70;--accent:#f0542d;--accent2:#f7943a;--line:#e6e4df}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--card:#1c1c1f;--text:#f2f2f4;--muted:#9a9aa1;--line:#2c2c30}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.logo{width:52px;height:52px;border-radius:13px;background:linear-gradient(135deg,var(--accent2),var(--accent));display:grid;place-items:center;flex:none}
+.logo svg{width:30px;height:30px}
+header .t{font-weight:800;font-size:22px;letter-spacing:-.3px}
+header .s{color:var(--muted);font-size:14px}
+.lang{margin-left:auto;display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:99px;padding:3px}
+.lang button{border:0;background:none;color:var(--muted);font:600 13px inherit;padding:5px 11px;border-radius:99px;cursor:pointer}
+.lang button.on{background:var(--accent);color:#fff}
+nav{display:flex;gap:16px;margin-bottom:24px;font-size:15px}
+nav a{color:var(--muted);text-decoration:none;font-weight:600}
+nav a.on{color:var(--accent)}
+h1{font-size:34px;line-height:1.15;letter-spacing:-.8px;margin:0 0 6px}
+.date{color:var(--muted);font-size:14px;margin-bottom:24px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 22px 8px;margin:16px 0}
+h2{font-size:19px;margin:0 0 8px;letter-spacing:-.2px}
+p,li{margin:0 0 14px}
+ul{padding-left:20px}
+a{color:var(--accent)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--accent2),var(--accent));color:#fff;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:12px;margin-bottom:16px}
+footer{color:var(--muted);font-size:13px;margin-top:40px;text-align:center}
+[data-l]{display:none}
+html[lang=fr] [data-l=fr],html[lang=en] [data-l=en]{display:block}
+html[lang=fr] span[data-l=fr],html[lang=en] span[data-l=en]{display:inline}
